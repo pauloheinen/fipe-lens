@@ -1,0 +1,9 @@
+{
+    "name":  "com.marketplace.fipelens",
+    "description":  "Inicia o leitor headless do Marketplace FIPE Lens sob demanda",
+    "path":  "E:\\Projetos\\marketplace\\native_host.bat",
+    "type":  "stdio",
+    "allowed_origins":  [
+                            "chrome-extension://pamgljhdobicboaghhdhacicjmnoifba/"
+                        ]
+}

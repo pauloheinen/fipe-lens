@@ -1,0 +1,9 @@
+body { width: 290px; margin: 0; padding: 16px; color: #0f172a; font: 13px system-ui, sans-serif; }
+h1 { margin: 0 0 14px; font-size: 17px; }
+label { display: block; margin: 10px 0; font-weight: 600; }
+input { box-sizing: border-box; display: block; width: 100%; margin-top: 4px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 7px; font: inherit; }
+button { width: 100%; margin-top: 7px; padding: 9px; border: 0; border-radius: 7px; background: #166534; color: white; font: inherit; font-weight: 700; cursor: pointer; }
+button.secondary { background: #334155; }
+#savedCount { margin-bottom: 0; color: #334155; }
+#status { min-height: 18px; color: #166534; }
+.note { color: #475569; font-size: 11px; }

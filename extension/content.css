@@ -1,0 +1,33 @@
+.mpfl-badge {
+  display: block;
+  margin: 5px 0 2px;
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #334155;
+  font: 12px/1.35 system-ui, sans-serif;
+  box-shadow: 0 1px 4px #0002;
+}
+.mpfl-badge b, .mpfl-badge span, .mpfl-badge small { display: block; }
+.mpfl-badge span { margin-top: 2px; }
+.mpfl-badge small { margin-top: 3px; color: #475569; }
+.mpfl-good { background: #dcfce7; color: #14532d; }
+.mpfl-maybe { background: #fef3c7; color: #713f12; }
+.mpfl-high { background: #fee2e2; color: #7f1d1d; }
+#mpfl-panel {
+  position: relative;
+  width: min(100%, 760px);
+  margin: 18px auto;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  background: #fff;
+  color: #0f172a;
+  box-shadow: 0 12px 40px #0004;
+  font: 13px/1.45 system-ui, sans-serif;
+}
+.mpfl-panel-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: #0f172a; color: white; }
+.mpfl-panel-head button { border: 0; background: transparent; color: white; font-size: 22px; cursor: pointer; }
+.mpfl-panel-body { padding: 14px; }
+.mpfl-panel-body p { margin: 8px 0; }
+.mpfl-inline-panel { box-sizing: border-box; }

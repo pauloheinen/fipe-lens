@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketplace FIPE Lens</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>FIPE Lens</h1>
+  <label>Marcar potencial a partir de (% abaixo da FIPE)<input id="threshold" type="number" min="0" max="80" value="15"></label>
+  <button id="save">Salvar configuracao</button>
+  <button id="openSaved" class="secondary">Anuncios salvos</button>
+  <p id="savedCount"></p>
+  <p id="status" role="status"></p>
+  <p class="note">Inicie start_headless_worker.cmd para analisar detalhes. Dados e cotacoes ficam locais por 30 dias.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

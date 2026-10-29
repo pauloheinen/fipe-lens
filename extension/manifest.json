@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Marketplace FIPE Lens",
+  "version": "0.1.1",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq9bsrtmN3ask2K5O6EKjaceslXMs3+4PZ+5uFTFmuaRv0YrSR5AjoCPW1Bhq52OX7OUXGlrWuP0IdrVbeRdoDsOCd8xV8R05X7pyneqyXbrxMs+0faLNpWMSUK6xkm51RoYFvLtqs9NhpXem/Dl8cVKXfLCkZhE4lXtSOvoLmEdUnMgvlNQRbwilIA1h0fJmhmGUJT49Xt/QQIjg2HeoFMFpdSWDzOsfiyPwbs1m9178VzU+MD5q3i/kQch0VVWggRCrCzzJnHn3PGxZ5Wg6ngJKvCkC1zAHTN7CGcfS2XEtTUntgim0N6U8OH9Wx32bR9dQEEiIDA+1UpCLTLdUVQIDAQAB",
+  "description": "Compara anúncios de motos do Marketplace com a FIPE e destaca fatores para avaliar a compra.",
+  "permissions": ["storage", "nativeMessaging"],
+  "host_permissions": [
+    "https://www.facebook.com/marketplace/*",
+    "https://parallelum.com.br/*",
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Configurar FIPE Lens",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/marketplace/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
